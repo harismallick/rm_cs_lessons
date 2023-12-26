@@ -38,3 +38,6 @@ variable_3 = 10
 
 variable_2 = variable_1 + variable_3
 print(variable_2)
+
+variable_4 = sum([variable_1, variable_3])
+print(variable_4)

@@ -22,3 +22,15 @@ let string = "Time and tide";
 for (let i=0; i < string.length; i++) {
     console.log(i, string[i]);
 }
+
+// question 4-b
+
+var m = "When at modern";
+// alert("The length of the string is " + m.length);
+// alert("The character at the third position is e");
+
+var input = prompt("Enter a number");
+var integer = parseInt(input);
+for (let i = 1; i <= integer; i++) {
+    document.write(i + "<br>");
+}
