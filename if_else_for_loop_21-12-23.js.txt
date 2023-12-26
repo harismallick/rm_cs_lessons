@@ -1,0 +1,33 @@
+// Section B question A-I
+
+var n = prompt("Pick a number.");
+var integer = parseInt(n); // Converts string to an integer
+
+// if (integer >= 10) {
+//     if (integer <= 20) {
+//         alert("Number is within the desired range.");
+//     } else {
+//         alert("NUmber is greater than 20.");
+//     }
+// } else {
+//     alert("Number is less than 10.");
+// }
+
+// This is an example of an AND logic gate:
+if (integer >= 10 && integer <= 20) {
+        alert("Number is within the desired range.");
+} else {
+    alert("Number is outside of range. Please select a number between 10 and 20.");
+    // location.reload();
+}
+
+// This is an example of an OR logic gate:
+if (integer >= 10 || integer <= 20) {
+    console.log("One of the conditions is met.");
+} else {
+console.log("Number is outside of range. Please select a number between 10 and 20.");
+// location.reload();
+}
+
+// Homework //
+// Check is the number entered by user is between 100 and 120. If the number is within this range, use alert() or console.log() to output the user-entered number multiplied by 5. Use appriopriate else statement to warn user if incorrect number entered.
