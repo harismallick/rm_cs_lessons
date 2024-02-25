@@ -1,11 +1,13 @@
 // Switch Case implementation of answer:
-var string = prompt("Enter your statement here:");
+var s = prompt("Enter your statement here:");
 
 var vowelCount = 0;
 var spaceCount = 0;
 
-for (var i = 0; i < string.length; i++) {
-    switch(string[i]) {
+for (var i = 0; i < s.length; i++) {
+    var char = s.charAt(i).toLowerCase();
+
+    switch(char) {
         case "a":
             vowelCount += 1;
             break
@@ -41,7 +43,7 @@ if (spaceCount >= 4) {
 // var otherCharacters = 0; 
 
 // for (var i = 0; i < l; i++) {
-//     var char = s.charAt(i);
+//     var char = s.charAt(i).toLowerCase();
 //     if (char === "a" || char === "e" || char === "i" || char === "o" || char === "u") {
 //         vowelCount++;
 //     } else if (char === " ") {
@@ -57,4 +59,13 @@ if (spaceCount >= 4) {
 //     document.write("The given sentence needs to have 5 words or more.");
 // }
 // My name is Rayyan Mallick
-
+/*
+Output for this case:
+Number of vowels = 7
+Number of spaces = 4
+*/
+// I am called Rayyan Mallick
+/*
+Number of vowels = 8
+Number of spaces = 4
+*/
