@@ -3,11 +3,13 @@ var s = prompt("Enter your statement here:");
 
 var vowelCount = 0;
 var spaceCount = 0;
+var otherCharacters = 0; 
 
 for (var i = 0; i < s.length; i++) {
     var char = s.charAt(i).toLowerCase();
 
     switch(char) {
+
         case "a":
             vowelCount += 1;
             break
@@ -25,12 +27,15 @@ for (var i = 0; i < s.length; i++) {
             break   
         case " ":
             spaceCount += 1;
-            break   
+            break
+        default:
+            otherCharacters += 1;
     }
 }
 if (spaceCount >= 4) {
     document.write("Number of spaces in the sentence: " + spaceCount + "<br>");
     document.write("Number of vowels in the sentence: " + vowelCount + "<br>");
+    document.write("Number of other characters in the sentence: " + otherCharacters + "<br>");
 } else {
     document.write("Not enough words in the string.");
 }

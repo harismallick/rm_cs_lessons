@@ -43,6 +43,16 @@ var replacePet = "dog";
 var newSentence2 = sentence2.replaceAll("cat", "dog");
 console.log("Sentence with words replaced:\n" + newSentence2);
 
+var replaceWord = "dog";
+var newSentence3 = sentence2.replace(/cat/g, replaceWord);
+console.log("New sentence after using global replace() funciton:\n" + newSentence3);
+
+var sentence4 = "I have a pet cat. The CAT has grey fur. The cAt loves fish.";
+var newSentence5 = sentence4.replace(/cat/gi, replaceWord);
+console.log("New sentence after using \'gi\' replace() funciton:\n" + newSentence5);
+
+
+
 // trim() method removes whitespace from both sides of a string.
 // trimStart() method removes whitespace from the start of a string only.
 // trimEnd() method removes whitespace from the end of a string only.
@@ -59,8 +69,23 @@ var index = 5;
 var findChar = charText.charAt(index);
 console.log("The letter at index position " + index + " is: " + findChar);
 
+// substring() method in javascript
+
+var bigString = "Apple, Banana, Kiwi";
+var substring = bigString.substring(7, 13);
+var substring2 = bigString.substring(-12, -6);
+// This example shows us that substring() does not work with negative numbers for the index values.
+
+var slice = bigString.slice(7, 13);
+var slice2 = bigString.slice(-12, -6);
+// This example shows us that slice() does work with negative numbers for the index values.
 
 
+console.log("The substring fruit is: " + substring);
+console.log("The substring fruit is: " + substring2);
+
+console.log("The sliced fruit is: " + slice);
+console.log("The sliced fruit is: " + slice2);
 
 
 
